@@ -1,0 +1,22 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+   border: 2px solid red;
+   display: flex;
+   justify-content: space-between; /*Horizontal*/
+}
+
+header > img {
+   height: 50px;
+}
+
+header > nav {
+   border: 2px solid blue;
+   display: flex;
+   align-items: center; /*Vertical*/
+   gap: 10px; /*Espacio entre los elmts hijos*/
+}
