@@ -2,32 +2,60 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+   color: #fff;
+}
+
+body {
+   background-color: #000;
 }
 
 header {
    border: 2px solid red;
    display: flex;
-   justify-content: space-around; /*Horizontal*/
+   justify-content: space-around;
+   /*Horizontal*/
 }
 
-header > img {
-   height: 50px;
+header>img {
+   height: 35px;
 }
 
-header > nav {
+header>nav {
    border: 2px solid blue;
    display: flex;
-   align-items: center; /*Vertical*/
-   gap: 15px; /*Distancia entre elemtos*/
+   align-items: center;
+   /*Vertical*/
+   gap: 15px;
+   /*Distancia entre elemtos*/
 }
 
-main{
+main {
    border: 5px solid green;
 }
 
-#producto{
+#producto {
    display: flex;
    flex-direction: column;
-   align-items: center; /*Horizontal cuando usamos column*/
+   align-items: center;
+   /*Horizontal cuando usamos column*/
    gap: 8px;
+}
+
+#producto>img {
+   width: 250px;
+}
+
+.container-buttons>button {
+   background-color: #3746AB;
+   height: 35px;
+   width: 135px;
+   border: none;
+   border-radius: 50px;
+}
+
+.container-buttons>button:last-child {
+   background-color: #000;
+   border: 2px solid #3746AB;
+   color: #3746AB;
 }
