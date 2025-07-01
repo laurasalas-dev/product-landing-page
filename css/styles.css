@@ -30,10 +30,6 @@ header>nav {
    /*Distancia entre elemtos*/
 }
 
-main {
-   border: 5px solid green;
-}
-
 #producto {
    display: flex;
    flex-direction: column;
@@ -58,4 +54,56 @@ main {
    background-color: #000;
    border: 2px solid #3746AB;
    color: #3746AB;
+}
+
+#container{
+   border: 5px solid green;
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: repeat(5, 75px);
+   gap: 5px;
+}
+
+#container > div {
+   border: 1px dotted #fff;
+   border-radius: 12px;
+}
+
+.elemnt4{
+   grid-column: span 2;
+}
+
+.elemnt5{
+   grid-column: span 2;
+}
+
+.elemnt6{
+   grid-column: span 2;
+   grid-row: span 2;
+}
+
+.elemnt7{
+   grid-column: span 3;
+   grid-row: span 3;
+}
+
+.elemnt8{
+   grid-row: span 2;
+}
+
+.elemnt9{
+   grid-row: span 2;
+}
+
+.elemnt12{
+   grid-row: span 2;
+   grid-column: span 2;
+}
+
+.elemnt13{
+   grid-column: span 2;
+}
+
+.elemnt14{
+   grid-column: span 3;
 }
