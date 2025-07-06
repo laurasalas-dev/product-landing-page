@@ -4,7 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Mi producto</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <title>Apple</title>
    <link rel="icon" type="image/x-icon" href="img/fabicon.png">
    <link rel="stylesheet" href="css/styles.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,9 @@
 </head>
 
 <body>
-   <header>
-      <img src="/img/logo.png" alt="Logo Apple">
-      <nav>
+   <header class="flex items-center gap-[15px] justify-around mt-10">
+      <img src="/img/logo.png" alt="Logo Apple" class="h-[35px]">
+      <nav class="flex gap-[40px]">
          <a href="">Home</a>
          <a href="">New</a>
          <a href="">Popular</a>
@@ -25,58 +26,169 @@
       </nav>
    </header>
    <main>
-      <section id="producto">
-         <h1>Airpods Pro</h1>
-         <p>Disfruta de la calidad del audio</p>
-         <div class="container-buttons">
-            <button id="btn-1">Comprar</button>
-            <button id="btn-2">Descubre mas</button>
+      <section class="flex flex-col items-center gap-3 mt-20">
+         <h1 class="text-[40px] font-bold">Airpods Pro</h1>
+         <p class="mt-1 mb-4">Disfruta de la calidad del audio</p>
+         <div class="flex gap-4">
+            <button class="bg-indigo-700 w-[135px] h-[35px] border-0 rounded-[50px] text-white">Comprar</button>
+            <button class="border border-indigo-700 w-[135px] h-[35px] rounded-[50px] text-indigo-700">Descubre
+               mas</button>
          </div>
-         <img src="/img/airpods.png" alt="Airpods Pro">
+         <img src="/img/airpods.png" alt="Airpods Pro" class="w-[250px]">
       </section>
 
-      <section id="catalogo">
-         <h2>Catalogo de productos</h2>
-         <div class="catalogo-productos" style="display: flex;">
-            <div class="producto">
-               <img src="/img/iphone.png" alt="Iphone 14 Pro">
-               <h3>Iphone 14 Pro</h3>
-               <p>Desde $999.99</p>
+      <section id="catalogo" class="flex flex-col items-center gap-10 mt-20">
+         <h2 class="text-[40px] font-bold">Catalogo de productos</h2>
+         <div class="flex flex-wrap justify-center gap-8 w-full px-4">
+            <div class="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col items-center max-w-xs w-full">
+               <img src="img/iphone14.png" alt="Iphone 14 Pro" class="w-[200px] mb-4">
+               <h3 class="text-xl font-semibold mt-9 mb-2">Iphone 14 Pro</h3>
+               <p class="mb-2">Desde $999.99</p>
+               <button class="bg-indigo-700 text-white rounded-full px-6 py-2 mt-2">Comprar</button>
             </div>
-            <div class="producto">
-               <img src="/img/macbook.png" alt="Macbook Pro">
-               <h3>Macbook Pro</h3>
-               <p>Desde $1,299.99</p>
+            <div class="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col items-center max-w-xs w-full">
+               <img src="img/mackbookpro.png" alt="Macbook Pro" class="w-[200px] mb-4 mt-4">
+               <h3 class="text-xl font-semibold mt-9 mb-2">Macbook Pro</h3>
+               <p class="mb-2">Desde $1,299.99</p>
+               <button class="bg-indigo-700 text-white rounded-full px-6 py-2 mt-2">Comprar</button>
             </div>
-            <div class="producto">
-               <img src="/img/ipad.png" alt="Ipad Pro">
-               <h3>Ipad Pro</h3>
-               <p>Desde $799.99</p>
+            <div class="bg-white text-black rounded-xl shadow-lg p-6 flex flex-col items-center max-w-xs w-full">
+               <img src="img/ipad.png" alt="Ipad Pro" class="w-[200px] mb-4">
+               <h3 class="text-xl font-semibold mb-2">Ipad Pro</h3>
+               <p class="mb-2">Desde $799.99</p>
+               <button class="bg-indigo-700 text-white rounded-full px-6 py-2 mt-2">Comprar</button>
             </div>
          </div>
       </section>
 
-      <section id="container">
-         <div class="elemnt1">1</div>
-         <div class="elemnt2">2</div>
-         <div class="elemnt3">3</div>
-         <div class="elemnt4">4</div>
-         <div class="elemnt5">5</div>
-         <div class="elemnt6">6</div>
-         <div class="elemnt7">7</div>
-         <div class="elemnt8">8</div>
-         <div class="elemnt9">9</div>
-         <div class="elemnt10">10</div>
-         <div class="elemnt11">11</div>
-         <div class="elemnt12">12</div>
-         <div class="elemnt13">13</div>
-         <div class="elemnt14">14</div>
+      <section id="container" class="mt-30">
+
+         <div class="p-4 flex items-center gap-4">
+            <img src="img/dispositivos.png" alt="Dispositivos activos" class="w-[70px]">
+            <div class="flex flex-col justify-center">
+               <h3 class="text-black font-semibold">Dispositivos activos</h3>
+               <p class="text-black">2.35 B</p>
+            </div>
+         </div>
+
+         <div class="p-4 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full">
+            <h3 class="text-black font-bold text-lg mb-1">Market Cap</h3>
+            <p class="text-indigo-700 text-2xl font-semibold">$3.6 T</p>
+         </div>
+
+         <div
+            class="elemnt3 flex flex-row-reverse items-center justify-between bg-white rounded-xl shadow-lg h-full p-4">
+            <img src="img/mac.jpg" alt="Ingresos" class="w-[100px] ml-4">
+            <div class="flex flex-col items-end justify-center flex-1">
+               <h3 class="text-black font-bold text-lg">Ingresos Q1 2025</h3>
+               <p class="text-indigo-700 text-xl font-semibold">$124 B</p>
+            </div>
+         </div>
+
+         <div class="elemnt4 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <h3 class="text-black font-bold text-lg mb-1">iOS share</h3>
+            <p class="text-indigo-700 text-2xl font-semibold">28 %</p>
+         </div>
+
+         <div class="elemnt5 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <h3 class="text-black font-bold text-lg mb-1">Mac share</h3>
+            <p class="text-indigo-700 text-2xl font-semibold">8.8 %</p>
+         </div>
+
+         <div class="elemnt6 flex items-center bg-white rounded-xl shadow-lg h-full p-4">
+            <img src="img/ipad2.jpg" alt="iPad" class="w-[100px] mb-2 mr-2">
+            <div class="flex flex-col justify-center flex-1">
+               <h3 class="text-black font-bold text-lg mb-1 text-center">iPad share</h3>
+               <p class="text-indigo-700 text-2xl font-semibold text-center">31.7 %</p>
+            </div>
+         </div>
+
+         <div class="elemnt7 flex flex-col items-center justify-center h-full">
+            <img src="img/watch.jpeg" alt="Apple Watch" class="w-[150px] mb-2">
+            <h3 class="text-black font-semibold">Apple Watch</h3>
+            <p class="text-black">55 %</p>
+         </div>
+
+         <div class="elemnt8 flex items-center bg-white rounded-xl shadow-lg h-full p-4">
+            <img src="img/apss.png" alt="Apps" class="w-[100px] mb-2 mr-3">
+            <div class="flex flex-col justify-center flex-1">
+               <h3 class="text-black font-bold text-lg text-center">Apps App Store</h3>
+               <p class="text-indigo-700 text-2xl font-semibold text-center">2.2 M</p>
+            </div>
+         </div>
+
+         <div class="elemnt9 flex items-center bg-white rounded-xl shadow-lg h-full p-4">
+            <div class="flex flex-col justify-center flex-1">
+               <h3 class="text-black font-bold text-lg text-center">Tiendas físicas</h3>
+               <p class="text-indigo-700 text-2xl font-semibold text-center">500+</p>
+            </div>
+            <img src="img/tiendas.png" alt="Tiendas físicas" class="w-[80px] mb-2 ml-3">
+         </div>
+
+         <div class="elemnt10 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <h3 class="text-black font-bold text-lg text-center leading-tight">América<br>
+               <span class="font-normal text-base">Ingresos</span>
+            </h3>
+            <p class="text-indigo-700 text-2xl font-semibold text-center mt-1">43.7 %</p>
+         </div>
+
+         <div class="elemnt11 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <h3 class="text-black font-bold text-lg text-center leading-tight mb-0">Europa<br>
+               <span class="font-normal text-base">Ingresos</span>
+            </h3>
+            <p class="text-indigo-700 text-2xl font-semibold text-center mt-1 mb-0">25.9 %</p>
+         </div>
+
+         <div class="elemnt12 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <img src="img/asia.png" alt="Asia ingresos" class="w-[90px] mb-2">
+            <h3 class="text-black font-bold text-lg text-center mb-1">China <span
+                  class="font-normal font-bold text-base">ingresos</span></h3>
+            <p class="text-indigo-700 text-2xl font-semibold text-center">17.1 %</p>
+         </div>
+
+         <div class="elemnt13 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <h3 class="text-black font-bold text-lg mb-1 text-center">Wearables Q1</h3>
+            <p class="text-indigo-700 text-2xl font-semibold text-center">$11.75 B</p>
+         </div>
+
+         <div class="elemnt14 flex flex-col items-center justify-center bg-white rounded-xl shadow-lg h-full p-4">
+            <h3 class="text-black font-bold text-lg mb-1 text-center">Servicios YoY</h3>
+            <p class="text-indigo-700 text-2xl font-semibold text-center">+14 %</p>
+         </div>
       </section>
+
+      <section class="flex flex-col items-center gap-10 mt-30">
+         <h2 class="text-[40px] font-bold">Testimonios</h2>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full px-4 max-w-6xl">
+            <div class="bg-white p-4 rounded shadow text-gray-700">
+               <p class="italic">“Los AirPods Pro superaron mis expectativas. Calidad de sonido increíble.”</p>
+               <p class="mt-2 font-semibold text-black">– Juan P.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow text-gray-700">
+               <p class="italic">“Compré un MacBook y estoy encantada. Perfecto para mi trabajo creativo.”</p>
+               <p class="mt-2 font-semibold text-black">– María L.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow text-gray-700">
+               <p class="italic">“El servicio de Apple es excepcional, me ayudaron en todo el proceso.”</p>
+               <p class="mt-2 font-semibold text-black">– Carlos G.</p>
+            </div>
+         </div>
+      </section>
+
    </main>
 
-
-
-   <footer>
+   <footer class="bg-black text-white py-8 mt-25">
+      <div class="flex flex-col items-center gap-2">
+         <p class="text-center">© 2025 Apple Inc. Todos los derechos reservados.</p>
+         <p class="text-center">Cupertino, California, EE.UU.</p>
+         <div class="flex flex-wrap justify-center gap-4 mt-2">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Soporte técnico</a>
+            <a href="#">Mapa del sitio</a>
+         </div>
+         <p class="mt-2 text-center">Tel: +1-800-00-00000 | Email: soporte@apple.com</p>
+      </div>
    </footer>
 
 </body>
