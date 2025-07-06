@@ -15,7 +15,7 @@ Por último, tuve dificultades al intentar subir el proyecto a GitHub. Al hacer 
 Durante el desarrollo del proyecto tomé varias decisiones técnicas con el objetivo de mejorar la estructura, el rendimiento y la experiencia del usuario.
 
 Uso de HTML5 semántico:
-Elegí emplear etiquetas semánticas como <header>, <nav>, <main>, <section> y <footer> para lograr un código más legible y accesible. Esto facilita que los lectores de pantalla y los motores de búsqueda comprendan mejor la estructura de la página.
+Elegí emplear etiquetas semánticas como header, nav, main, section y footer para lograr un código más legible y accesible. Esto facilita que los lectores de pantalla y los motores de búsqueda comprendan mejor la estructura de la página.
 
 Aplicación de Tailwind CSS:
 Opté por utilizar Tailwind CSS para el diseño visual del sitio. Esto me permitió acelerar el proceso de maquetado y lograr una interfaz consistente gracias a sus clases utilitarias. Tailwind se usó principalmente en la landing page y en el apartado de testimonios, combinándose con Flexbox y Grid para organizar los elementos.
